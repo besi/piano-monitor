@@ -1,4 +1,5 @@
 (sym_lib_table
   (version 7)
   (lib (name "iec320-c14")(type "KiCad")(uri "${KIPRJMOD}/lib/iec320-c14/iec320-c14.kicad_sym")(options "")(descr ""))
+  (lib (name "tpa3110")(type "KiCad")(uri "${KIPRJMOD}/lib/tpa3110/tpa3110.kicad_sym")(options "")(descr ""))
 )

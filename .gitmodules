@@ -4,3 +4,6 @@
 [submodule "lib/c14-outlet"]
 	path = lib/c14-outlet
 	url = https://github.com/besi/kicad-c14-outlet
+[submodule "lib/tpa3110"]
+	path = lib/tpa3110
+	url = https://github.com/besi/kicad-tpa3110
