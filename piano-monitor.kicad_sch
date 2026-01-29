@@ -5,54 +5,28 @@
 	(uuid "a27efd99-174e-47e5-804a-22be857a638b")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:IEC_60320_C14_Receptacle"
+		(symbol "Connector_Audio:NCJ6FA-V"
+			(pin_names hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at -5.842 8.636 0)
+				(at 0 10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "IEC_60320_C14_Receptacle"
-				(at 0 -9.144 0)
+			(property "Value" "NCJ6FA-V"
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
-				(at -2.286 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at -2.286 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "C14 Plug, 10A max"
-				(at -0.635 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Plug C14 IEC320"
+			(property "Footprint" "Connector_Audio:Jack_XLR-6.35mm_Neutrik_NCJ6FA-V_Vertical"
 				(at 0 0 0)
 				(effects
 					(font
@@ -61,7 +35,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "C*14*Receptacle*"
+			(property "Datasheet" "https://www.neutrik.com/en/product/ncj6fa-v"
 				(at 0 0 0)
 				(effects
 					(font
@@ -70,56 +44,107 @@
 					(hide yes)
 				)
 			)
-			(symbol "IEC_60320_C14_Receptacle_1_1"
-				(rectangle
-					(start -6.35 7.62)
-					(end 6.35 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
+			(property "Description" "Combo A series, 3 pole XLR female receptacle with 6.35mm (1/4in) stereo jack, vertical PCB mount"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(fill
-						(type background)
-					)
+					(hide yes)
 				)
-				(rectangle
-					(start -3.937 -3.302)
-					(end -1.397 -4.318)
+			)
+			(property "ki_keywords" "xlr connector neutrik"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jack*XLR*6.35mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "NCJ6FA-V_1_1"
+				(circle
+					(center -3.556 0)
+					(radius 1.016)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
-				(rectangle
-					(start -3.81 4.318)
-					(end -1.27 3.302)
+				(circle
+					(center 0 -3.556)
+					(radius 1.016)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -0.508 0.508)
-					(end 2.032 -0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(polyline
 					(pts
-						(xy -4.826 -6.35) (xy -5.334 -5.842) (xy -5.334 5.842) (xy -4.826 6.35) (xy 0.254 6.35) (xy 2.794 3.81)
-						(xy 2.794 -3.81) (xy 0.254 -6.35) (xy -4.826 -6.35)
+						(xy -5.08 0) (xy -4.572 0)
 					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -5.08) (xy -2.54 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 0 -4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 4.572 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 5.08)
 					(stroke
 						(width 0)
 						(type default)
@@ -128,10 +153,48 @@
 						(type background)
 					)
 				)
-				(pin power_in line
-					(at 8.89 5.08 180)
+				(circle
+					(center 3.556 0)
+					(radius 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "1"
+					(at -3.556 1.778 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+							(bold yes)
+						)
+					)
+				)
+				(text "2"
+					(at 3.556 1.778 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+							(bold yes)
+						)
+					)
+				)
+				(text "3"
+					(at 0 -1.778 0)
+					(effects
+						(font
+							(size 1.016 1.016)
+							(bold yes)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
 					(length 2.54)
-					(name "L"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -146,10 +209,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 8.89 -5.08 180)
+				(pin passive line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "N"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -164,10 +227,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at 8.89 0 180)
+				(pin passive line
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "PE"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -182,77 +245,29 @@
 						)
 					)
 				)
-			)
-		)
-		(symbol "Connector_Audio:AudioJack3_Switch"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+				(pin passive line
+					(at -2.54 -7.62 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
-			(property "Value" "AudioJack3_Switch"
-				(at 0 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Switched Poles (Normalling)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "audio jack receptacle stereo headphones connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Jack*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AudioJack3_Switch_0_1"
+			(symbol "NCJ6FA-V_2_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end -6.35 -7.62)
+					(start -5.08 -2.54)
+					(end -6.35 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -263,43 +278,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 4.826) (xy -1.016 4.318)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 -0.254) (xy 0.762 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.778 -5.334) (xy 2.032 -5.842)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.08) (xy 0.635 -5.715) (xy 1.27 -5.08) (xy 2.54 -5.08)
+						(xy 0 -2.54) (xy 0.635 -3.175) (xy 1.27 -2.54) (xy 2.54 -2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -311,43 +290,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -7.62) (xy 1.778 -7.62) (xy 1.778 -5.334) (xy 1.524 -5.842)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 0.508 -2.54) (xy 0.508 -0.254) (xy 0.254 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy -1.27 2.54) (xy -1.27 4.826) (xy -1.524 4.318)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 -5.08) (xy -1.27 -5.715) (xy -0.635 -5.08) (xy -0.635 0) (xy 2.54 0)
+						(xy -1.905 -2.54) (xy -1.27 -3.175) (xy -0.635 -2.54) (xy -0.635 0) (xy 2.54 0)
 					)
 					(stroke
 						(width 0.254)
@@ -359,7 +302,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 5.08) (xy -2.54 5.08) (xy -2.54 -5.08) (xy -3.175 -5.715) (xy -3.81 -5.08)
+						(xy 2.54 2.54) (xy -2.54 2.54) (xy -2.54 -2.54) (xy -3.175 -3.175) (xy -3.81 -2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -370,8 +313,8 @@
 					)
 				)
 				(rectangle
-					(start 2.54 6.35)
-					(end -5.08 -8.89)
+					(start 2.54 3.81)
+					(end -5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -380,8 +323,6 @@
 						(type background)
 					)
 				)
-			)
-			(symbol "AudioJack3_Switch_1_1"
 				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
@@ -401,25 +342,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "RN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 5.08 180)
+					(at 5.08 2.54 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -437,25 +360,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "SN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
+					(at 5.08 -2.54 180)
 					(length 2.54)
 					(name "~"
 						(effects
@@ -465,24 +370,6 @@
 						)
 					)
 					(number "T"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -7.62 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "TN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -914,6 +801,167 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "c14-outlet:c14-outlet"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "c14-outlet:c14-outlet"
+				(at 3.81 -9.398 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "c14-outlet_1_1"
+				(rectangle
+					(start -6.35 7.62)
+					(end 6.35 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -3.937 -3.302)
+					(end -1.397 -4.318)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -3.81 4.318)
+					(end -1.27 3.302)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -0.508 0.508)
+					(end 2.032 -0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.826 -6.35) (xy -5.334 -5.842) (xy -5.334 5.842) (xy -4.826 6.35) (xy 0.254 6.35) (xy 2.794 3.81)
+						(xy 2.794 -3.81) (xy 0.254 -6.35) (xy -4.826 -6.35)
+					)
+					(stroke
+						(width 0.5588)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at 8.89 5.08 180)
+					(length 2.54)
+					(name "L"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 8.89 -5.08 180)
+					(length 2.54)
+					(name "N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "PE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1707,6 +1755,102 @@
 				)
 			)
 		)
+		(symbol "power:GNDA"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GNDA"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GNDA_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GNDA_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "tpa3110:tpa3110"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1991,6 +2135,22 @@
 		(color 0 0 0 0)
 		(uuid "0e63a849-066c-4e71-8ddb-af56b4aebca5")
 	)
+	(junction
+		(at 60.96 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e276bcaa-25fd-4a05-b11d-6126568c0648")
+	)
+	(wire
+		(pts
+			(xy 60.96 87.63) (xy 63.5 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fb2aed7-c65b-4cd3-97e9-54e40423888a")
+	)
 	(wire
 		(pts
 			(xy 50.8 82.55) (xy 63.5 82.55)
@@ -2000,16 +2160,6 @@
 			(type default)
 		)
 		(uuid "4072375d-d3c4-4fea-a1f2-cc19a86ede14")
-	)
-	(wire
-		(pts
-			(xy 57.15 97.79) (xy 50.8 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4318bbe9-4027-4cce-8b2b-6b752eb9bec4")
 	)
 	(wire
 		(pts
@@ -2033,7 +2183,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 87.63) (xy 57.15 72.39)
+			(xy 57.15 87.63) (xy 57.15 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2043,7 +2193,17 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 72.39) (xy 50.8 72.39)
+			(xy 50.8 102.87) (xy 57.15 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b9bade2-1fd2-4c0a-8e7a-73b64eae20a2")
+	)
+	(wire
+		(pts
+			(xy 57.15 77.47) (xy 50.8 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2063,23 +2223,13 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 87.63) (xy 57.15 87.63)
+			(xy 57.15 87.63) (xy 57.15 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "90865873-7ea3-4b67-9d60-ae0d84dbe3b5")
-	)
-	(wire
-		(pts
-			(xy 57.15 87.63) (xy 57.15 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4964d8d-a08d-4321-b27f-1a3ef3fddef3")
+		(uuid "c12a79b8-48f4-4c4a-9ee3-0449617b3b3b")
 	)
 	(wire
 		(pts
@@ -2090,6 +2240,16 @@
 			(type default)
 		)
 		(uuid "d4511d4e-af8e-473d-8723-1b6a7c77074f")
+	)
+	(wire
+		(pts
+			(xy 57.15 87.63) (xy 60.96 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5309817-c612-40c0-859b-78e4122340f1")
 	)
 	(wire
 		(pts
@@ -2111,6 +2271,94 @@
 		)
 		(uuid "f7aad3ca-5c4f-4df3-a1db-ede8a5c2815d")
 	)
+	(global_label "T2"
+		(shape input)
+		(at 53.34 107.95 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0c238128-c7e9-43e8-af86-5c17221ed57f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.34 113.1123 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "S1"
+		(shape input)
+		(at 16.51 78.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2df0e102-6b11-49f4-a8e6-631747972345")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 11.1058 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "S2"
+		(shape input)
+		(at 21.59 111.76 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2e7904ed-5ca6-4d6a-94a8-eef065e75fd5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.59 117.1642 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "T1"
+		(shape input)
+		(at 31.75 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3a4b7bcf-fb7d-4d12-8107-2405e178392c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.9123 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "N"
 		(shape input)
 		(at 57.15 45.72 0)
@@ -2129,6 +2377,94 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "R1"
+		(shape input)
+		(at 50.8 80.01 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "42d35a7b-4633-419c-be08-5b3947185c0c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 56.2647 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "R2"
+		(shape input)
+		(at 50.8 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "59d6a0db-abbd-4f37-b0a8-a1d31893672b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 56.2647 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "S2"
+		(shape input)
+		(at 53.34 102.87 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "64b46c03-6d92-4235-8c84-bbece57111a5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.34 97.4658 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "T1"
+		(shape input)
+		(at 53.34 82.55 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "86ec4f33-4f35-4961-b833-5859704c072f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.34 87.7123 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2155,6 +2491,72 @@
 			)
 		)
 	)
+	(global_label "R1"
+		(shape input)
+		(at 24.13 86.36 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "971a9126-1be7-454f-a842-6580097801e8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 24.13 91.8247 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "S2"
+		(shape input)
+		(at 16.51 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b929f445-2e6e-488a-8e72-926773cc44ea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 11.1058 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "R2"
+		(shape input)
+		(at 24.13 111.76 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "babc0cbd-667e-4f48-b811-43793bbd4900")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 24.13 117.2247 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "L"
 		(shape input)
 		(at 57.15 40.64 0)
@@ -2168,6 +2570,28 @@
 		(uuid "bcd405bd-9131-4126-b6a9-e1bba1ccfb1f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 61.1633 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "T2"
+		(shape input)
+		(at 31.75 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c0d94b5e-8e30-4e38-a025-086407f2c865")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.9123 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2221,6 +2645,28 @@
 			)
 		)
 	)
+	(global_label "S1"
+		(shape input)
+		(at 21.59 86.36 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "efb8e296-7222-4136-a1a2-f77ae0a20b8b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 21.59 91.7642 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "L"
 		(shape input)
 		(at 111.76 34.29 180)
@@ -2239,6 +2685,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "S1"
+		(shape input)
+		(at 53.34 77.47 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f6ddb091-9858-45f5-88c9-a64780c442de")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 53.34 72.0658 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2305,6 +2773,155 @@
 			(project ""
 				(path "/a27efd99-174e-47e5-804a-22be857a638b"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 60.96 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06f1b903-e499-4b35-a93b-5955b4d3dbf8")
+		(property "Reference" "#PWR011"
+			(at 60.96 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 60.96 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 60.96 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb2a4d5c-7055-49ee-b3a2-74f4580b19c7")
+		)
+		(instances
+			(project ""
+				(path "/a27efd99-174e-47e5-804a-22be857a638b"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:NCJ6FA-V")
+		(at 24.13 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c2e5b1d-408e-464e-9132-877d708cc2dc")
+		(property "Reference" "J3"
+			(at 24.13 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NCJ6FA-V"
+			(at 24.13 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Audio:Jack_XLR-6.35mm_Neutrik_NCJ6FA-V_Vertical"
+			(at 24.13 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.neutrik.com/en/product/ncj6fa-v"
+			(at 24.13 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Combo A series, 3 pole XLR female receptacle with 6.35mm (1/4in) stereo jack, vertical PCB mount"
+			(at 24.13 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "47b66b56-e213-460f-b07f-34387ef09956")
+		)
+		(pin "T"
+			(uuid "3c17c1b1-edee-49ff-aad7-571228e9aceb")
+		)
+		(pin "3"
+			(uuid "cd025206-399d-4798-812a-d1081941ce6a")
+		)
+		(pin "G"
+			(uuid "7a4b8e1e-2d67-4148-8e56-72e9aebbb673")
+		)
+		(pin "1"
+			(uuid "de94bdfc-4e79-4f68-9109-a2e66a8ab101")
+		)
+		(pin "R"
+			(uuid "9f64881c-09d9-4b33-8be0-395b13f15708")
+		)
+		(pin "S"
+			(uuid "6cb6dcf7-44f4-444e-9740-3069880d7a22")
+		)
+		(instances
+			(project "piano-monitor"
+				(path "/a27efd99-174e-47e5-804a-22be857a638b"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -2381,17 +2998,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 74.93 107.95 0)
-		(unit 1)
+		(lib_id "Connector_Audio:NCJ6FA-V")
+		(at 45.72 80.01 0)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "31cd6913-3cb3-4931-b430-dad91cd4bbd5")
-		(property "Reference" "#PWR03"
-			(at 74.93 114.3 0)
+		(uuid "32ca6685-88f2-49b4-886b-430d52a49d62")
+		(property "Reference" "J7"
+			(at 43.815 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NCJ6FA-V"
+			(at 43.815 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Audio:Jack_XLR-6.35mm_Neutrik_NCJ6FA-V_Vertical"
+			(at 45.72 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2399,16 +3032,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 74.93 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 74.93 107.95 0)
+		(property "Datasheet" "https://www.neutrik.com/en/product/ncj6fa-v"
+			(at 45.72 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2416,8 +3041,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 74.93 107.95 0)
+		(property "Description" "Combo A series, 3 pole XLR female receptacle with 6.35mm (1/4in) stereo jack, vertical PCB mount"
+			(at 45.72 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2425,103 +3050,32 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e01dc27b-1fb7-4356-b129-3878892f4f57")
-		)
-		(instances
-			(project ""
-				(path "/a27efd99-174e-47e5-804a-22be857a638b"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Audio:AudioJack3_Switch")
-		(at 45.72 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "350852f2-1966-42d5-afc2-66cc9b752bfe")
-		(property "Reference" "J3"
-			(at 43.815 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R"
-			(at 43.815 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 45.72 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Switched Poles (Normalling)"
-			(at 45.72 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "72165d70-2403-465d-bdad-ccd0174cf6de")
 		)
 		(pin "T"
-			(uuid "95b9d802-83c0-4461-ad26-0a10b203ca4a")
+			(uuid "3c17c1b1-edee-49ff-aad7-571228e9aceb")
+		)
+		(pin "3"
+			(uuid "4ad70587-92b3-4abf-a8a0-d3540758d7f6")
+		)
+		(pin "G"
+			(uuid "94614516-2e70-49bd-878f-c3c58c4ea99c")
+		)
+		(pin "1"
+			(uuid "db0802bd-6fbe-4afb-8f0d-7387a87c36dc")
 		)
 		(pin "R"
-			(uuid "ec0970f1-901b-469f-ab2c-591884dfe6b4")
-		)
-		(pin "SN"
-			(uuid "21a96737-9322-44f4-9b39-d259e2703c4f")
+			(uuid "9f64881c-09d9-4b33-8be0-395b13f15708")
 		)
 		(pin "S"
-			(uuid "0666b024-1ce4-429c-9b27-208ca9596671")
-		)
-		(pin "TN"
-			(uuid "bef1d68b-753a-4404-b326-ec7fed29d92d")
-		)
-		(pin "RN"
-			(uuid "70795d99-c8d4-49a4-83d7-92fb125e9c0b")
+			(uuid "6cb6dcf7-44f4-444e-9740-3069880d7a22")
 		)
 		(instances
 			(project ""
 				(path "/a27efd99-174e-47e5-804a-22be857a638b"
-					(reference "J3")
-					(unit 1)
+					(reference "J7")
+					(unit 2)
 				)
 			)
 		)
@@ -2587,6 +3141,72 @@
 			(project ""
 				(path "/a27efd99-174e-47e5-804a-22be857a638b"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDA")
+		(at 74.93 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3d4d30ef-0e3b-42e7-b87a-3efbb0d5d2f8")
+		(property "Reference" "#PWR03"
+			(at 74.93 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDA"
+			(at 74.93 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
+			(at 74.93 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d19ce4b-b675-4985-93d1-c563250d7404")
+		)
+		(instances
+			(project "piano-monitor"
+				(path "/a27efd99-174e-47e5-804a-22be857a638b"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -2724,6 +3344,89 @@
 			(project ""
 				(path "/a27efd99-174e-47e5-804a-22be857a638b"
 					(reference "LS2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:NCJ6FA-V")
+		(at 24.13 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a50e7059-09fa-4f76-986c-a4bcaa187faf")
+		(property "Reference" "J7"
+			(at 24.13 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NCJ6FA-V"
+			(at 24.13 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Audio:Jack_XLR-6.35mm_Neutrik_NCJ6FA-V_Vertical"
+			(at 24.13 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.neutrik.com/en/product/ncj6fa-v"
+			(at 24.13 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Combo A series, 3 pole XLR female receptacle with 6.35mm (1/4in) stereo jack, vertical PCB mount"
+			(at 24.13 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "72165d70-2403-465d-bdad-ccd0174cf6de")
+		)
+		(pin "T"
+			(uuid "3c17c1b1-edee-49ff-aad7-571228e9aceb")
+		)
+		(pin "3"
+			(uuid "4ad70587-92b3-4abf-a8a0-d3540758d7f6")
+		)
+		(pin "G"
+			(uuid "94614516-2e70-49bd-878f-c3c58c4ea99c")
+		)
+		(pin "1"
+			(uuid "db0802bd-6fbe-4afb-8f0d-7387a87c36dc")
+		)
+		(pin "R"
+			(uuid "9f64881c-09d9-4b33-8be0-395b13f15708")
+		)
+		(pin "S"
+			(uuid "6cb6dcf7-44f4-444e-9740-3069880d7a22")
+		)
+		(instances
+			(project ""
+				(path "/a27efd99-174e-47e5-804a-22be857a638b"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -3025,6 +3728,77 @@
 		)
 	)
 	(symbol
+		(lib_id "c14-outlet:c14-outlet")
+		(at 76.2 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8463222-3db7-4293-93d7-6e2767ca4e6f")
+		(property "Reference" "J6"
+			(at 76.2 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 76.2 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "c14-outlet:c14-outlet"
+			(at 80.01 52.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 76.2 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81649e94-13fe-4a1e-8a04-0112d3aa8572")
+		)
+		(pin "3"
+			(uuid "a05f559a-c1a4-439e-be16-7e25e5aed6e8")
+		)
+		(pin "2"
+			(uuid "c61569dd-02ca-45c4-bea6-3104588feb77")
+		)
+		(instances
+			(project ""
+				(path "/a27efd99-174e-47e5-804a-22be857a638b"
+					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "iec320-c14:iec320-c14")
 		(at 41.91 43.18 0)
 		(unit 1)
@@ -3108,157 +3882,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:IEC_60320_C14_Receptacle")
-		(at 76.2 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c9a7dc8d-9330-443d-af6c-4d0c34bad3e5")
-		(property "Reference" "J2"
-			(at 76.2 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "C14"
-			(at 76.2 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.914 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 73.914 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "C14 Plug, 10A max"
-			(at 75.565 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "10f08e6a-26c7-4abc-a515-24dc7d181dd9")
-		)
-		(pin "3"
-			(uuid "b041866a-ce6e-4941-bdc8-03b21a44f326")
-		)
-		(pin "2"
-			(uuid "178b85e5-1b08-4dab-a272-474a1ddc2842")
-		)
-		(instances
-			(project ""
-				(path "/a27efd99-174e-47e5-804a-22be857a638b"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Audio:AudioJack3_Switch")
-		(at 45.72 102.87 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce1e43eb-2084-4dfb-a795-d4d0da3890bd")
-		(property "Reference" "J6"
-			(at 43.815 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L"
-			(at 43.815 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 45.72 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Audio Jack, 3 Poles (Stereo / TRS), Switched Poles (Normalling)"
-			(at 45.72 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "T"
-			(uuid "95b9d802-83c0-4461-ad26-0a10b203ca4b")
-		)
-		(pin "R"
-			(uuid "ec0970f1-901b-469f-ab2c-591884dfe6b5")
-		)
-		(pin "SN"
-			(uuid "21a96737-9322-44f4-9b39-d259e2703c50")
-		)
-		(pin "S"
-			(uuid "0666b024-1ce4-429c-9b27-208ca9596672")
-		)
-		(pin "TN"
-			(uuid "bef1d68b-753a-4404-b326-ec7fed29d92e")
-		)
-		(pin "RN"
-			(uuid "70795d99-c8d4-49a4-83d7-92fb125e9c0c")
-		)
-		(instances
-			(project ""
-				(path "/a27efd99-174e-47e5-804a-22be857a638b"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:Earth")
 		(at 111.76 39.37 270)
 		(unit 1)
@@ -3321,6 +3944,89 @@
 				(path "/a27efd99-174e-47e5-804a-22be857a638b"
 					(reference "#PWR05")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Audio:NCJ6FA-V")
+		(at 45.72 105.41 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed27ad58-b575-49eb-8adb-59c2cf0a4d39")
+		(property "Reference" "J3"
+			(at 43.815 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NCJ6FA-V"
+			(at 43.815 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Audio:Jack_XLR-6.35mm_Neutrik_NCJ6FA-V_Vertical"
+			(at 45.72 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.neutrik.com/en/product/ncj6fa-v"
+			(at 45.72 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Combo A series, 3 pole XLR female receptacle with 6.35mm (1/4in) stereo jack, vertical PCB mount"
+			(at 45.72 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "72165d70-2403-465d-bdad-ccd0174cf6df")
+		)
+		(pin "T"
+			(uuid "8586ddc0-504d-4bb6-bd03-f48437fc4333")
+		)
+		(pin "3"
+			(uuid "4ad70587-92b3-4abf-a8a0-d3540758d7f7")
+		)
+		(pin "G"
+			(uuid "94614516-2e70-49bd-878f-c3c58c4ea99d")
+		)
+		(pin "1"
+			(uuid "db0802bd-6fbe-4afb-8f0d-7387a87c36dd")
+		)
+		(pin "R"
+			(uuid "fa5490d6-2a13-4cb6-b6a6-fda8ea5b3a10")
+		)
+		(pin "S"
+			(uuid "15425afa-fed1-448d-9587-c7e5ef4c5b62")
+		)
+		(instances
+			(project "piano-monitor"
+				(path "/a27efd99-174e-47e5-804a-22be857a638b"
+					(reference "J3")
+					(unit 2)
 				)
 			)
 		)
