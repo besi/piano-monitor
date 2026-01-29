@@ -2141,6 +2141,22 @@
 		(color 0 0 0 0)
 		(uuid "e276bcaa-25fd-4a05-b11d-6126568c0648")
 	)
+	(no_connect
+		(at 50.8 80.01)
+		(uuid "1aa66f48-ae71-489a-8a5d-4b7c40505ee1")
+	)
+	(no_connect
+		(at 50.8 105.41)
+		(uuid "1eaf0929-ff8a-42ec-a89b-c3d13809256d")
+	)
+	(no_connect
+		(at 24.13 111.76)
+		(uuid "ba2aac27-79e0-4500-907f-a7ca77ee910b")
+	)
+	(no_connect
+		(at 24.13 86.36)
+		(uuid "cce5d7f7-d745-426f-a879-8ff057293e0a")
+	)
 	(wire
 		(pts
 			(xy 60.96 87.63) (xy 63.5 87.63)
@@ -2381,50 +2397,6 @@
 			)
 		)
 	)
-	(global_label "R1"
-		(shape input)
-		(at 50.8 80.01 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "42d35a7b-4633-419c-be08-5b3947185c0c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.2647 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "R2"
-		(shape input)
-		(at 50.8 105.41 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "59d6a0db-abbd-4f37-b0a8-a1d31893672b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.2647 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "S2"
 		(shape input)
 		(at 53.34 102.87 90)
@@ -2491,28 +2463,6 @@
 			)
 		)
 	)
-	(global_label "R1"
-		(shape input)
-		(at 24.13 86.36 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "971a9126-1be7-454f-a842-6580097801e8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 24.13 91.8247 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "S2"
 		(shape input)
 		(at 16.51 104.14 180)
@@ -2526,28 +2476,6 @@
 		(uuid "b929f445-2e6e-488a-8e72-926773cc44ea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 11.1058 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "R2"
-		(shape input)
-		(at 24.13 111.76 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "babc0cbd-667e-4f48-b811-43793bbd4900")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 24.13 117.2247 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3054,7 +2982,7 @@
 			(uuid "72165d70-2403-465d-bdad-ccd0174cf6de")
 		)
 		(pin "T"
-			(uuid "3c17c1b1-edee-49ff-aad7-571228e9aceb")
+			(uuid "3c17c1b1-edee-49ff-aad7-571228e9acec")
 		)
 		(pin "3"
 			(uuid "4ad70587-92b3-4abf-a8a0-d3540758d7f6")
@@ -3066,10 +2994,10 @@
 			(uuid "db0802bd-6fbe-4afb-8f0d-7387a87c36dc")
 		)
 		(pin "R"
-			(uuid "9f64881c-09d9-4b33-8be0-395b13f15708")
+			(uuid "9f64881c-09d9-4b33-8be0-395b13f15709")
 		)
 		(pin "S"
-			(uuid "6cb6dcf7-44f4-444e-9740-3069880d7a22")
+			(uuid "6cb6dcf7-44f4-444e-9740-3069880d7a23")
 		)
 		(instances
 			(project ""
@@ -3403,25 +3331,25 @@
 			)
 		)
 		(pin "2"
-			(uuid "72165d70-2403-465d-bdad-ccd0174cf6de")
+			(uuid "72165d70-2403-465d-bdad-ccd0174cf6df")
 		)
 		(pin "T"
-			(uuid "3c17c1b1-edee-49ff-aad7-571228e9aceb")
+			(uuid "3c17c1b1-edee-49ff-aad7-571228e9aced")
 		)
 		(pin "3"
-			(uuid "4ad70587-92b3-4abf-a8a0-d3540758d7f6")
+			(uuid "4ad70587-92b3-4abf-a8a0-d3540758d7f7")
 		)
 		(pin "G"
-			(uuid "94614516-2e70-49bd-878f-c3c58c4ea99c")
+			(uuid "94614516-2e70-49bd-878f-c3c58c4ea99d")
 		)
 		(pin "1"
-			(uuid "db0802bd-6fbe-4afb-8f0d-7387a87c36dc")
+			(uuid "db0802bd-6fbe-4afb-8f0d-7387a87c36dd")
 		)
 		(pin "R"
-			(uuid "9f64881c-09d9-4b33-8be0-395b13f15708")
+			(uuid "9f64881c-09d9-4b33-8be0-395b13f1570a")
 		)
 		(pin "S"
-			(uuid "6cb6dcf7-44f4-444e-9740-3069880d7a22")
+			(uuid "6cb6dcf7-44f4-444e-9740-3069880d7a24")
 		)
 		(instances
 			(project ""
@@ -4002,19 +3930,19 @@
 			)
 		)
 		(pin "2"
-			(uuid "72165d70-2403-465d-bdad-ccd0174cf6df")
+			(uuid "72165d70-2403-465d-bdad-ccd0174cf6e0")
 		)
 		(pin "T"
 			(uuid "8586ddc0-504d-4bb6-bd03-f48437fc4333")
 		)
 		(pin "3"
-			(uuid "4ad70587-92b3-4abf-a8a0-d3540758d7f7")
+			(uuid "4ad70587-92b3-4abf-a8a0-d3540758d7f8")
 		)
 		(pin "G"
-			(uuid "94614516-2e70-49bd-878f-c3c58c4ea99d")
+			(uuid "94614516-2e70-49bd-878f-c3c58c4ea99e")
 		)
 		(pin "1"
-			(uuid "db0802bd-6fbe-4afb-8f0d-7387a87c36dd")
+			(uuid "db0802bd-6fbe-4afb-8f0d-7387a87c36de")
 		)
 		(pin "R"
 			(uuid "fa5490d6-2a13-4cb6-b6a6-fda8ea5b3a10")
