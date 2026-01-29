@@ -1186,36 +1186,36 @@
 					)
 				)
 				(rectangle
-					(start -4.445 3.302)
-					(end -1.905 4.318)
+					(start -4.445 4.318)
+					(end -1.905 3.302)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(rectangle
-					(start -4.318 -4.318)
-					(end -1.778 -3.302)
+					(start -4.318 -3.302)
+					(end -1.778 -4.318)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(rectangle
-					(start -1.016 -0.508)
-					(end 1.524 0.508)
+					(start -1.016 0.508)
+					(end 1.524 -0.508)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(polyline
@@ -1232,9 +1232,9 @@
 					)
 				)
 				(pin power_in line
-					(at -2.54 13.97 270)
+					(at -2.54 -11.43 90)
 					(length 2.54)
-					(name "L"
+					(name "N"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1250,9 +1250,9 @@
 					)
 				)
 				(pin power_in line
-					(at -2.54 -11.43 90)
+					(at -2.54 13.97 270)
 					(length 2.54)
-					(name "N"
+					(name "L"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2715,10 +2715,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "13c1cac6-b71d-441f-b004-6343aa0b90bf")
+			(uuid "13c1cac6-b71d-441f-b004-6343aa0b90c0")
 		)
 		(pin "1"
-			(uuid "be0ecc4b-43a7-4f2b-b8b6-92d2b64fbd20")
+			(uuid "be0ecc4b-43a7-4f2b-b8b6-92d2b64fbd21")
 		)
 		(instances
 			(project ""
@@ -3232,22 +3232,22 @@
 			)
 		)
 		(pin "T"
-			(uuid "95b9d802-83c0-4461-ad26-0a10b203ca4a")
+			(uuid "95b9d802-83c0-4461-ad26-0a10b203ca4b")
 		)
 		(pin "R"
-			(uuid "ec0970f1-901b-469f-ab2c-591884dfe6b4")
+			(uuid "ec0970f1-901b-469f-ab2c-591884dfe6b5")
 		)
 		(pin "SN"
-			(uuid "21a96737-9322-44f4-9b39-d259e2703c4f")
+			(uuid "21a96737-9322-44f4-9b39-d259e2703c50")
 		)
 		(pin "S"
-			(uuid "0666b024-1ce4-429c-9b27-208ca9596671")
+			(uuid "0666b024-1ce4-429c-9b27-208ca9596672")
 		)
 		(pin "TN"
-			(uuid "bef1d68b-753a-4404-b326-ec7fed29d92d")
+			(uuid "bef1d68b-753a-4404-b326-ec7fed29d92e")
 		)
 		(pin "RN"
-			(uuid "70795d99-c8d4-49a4-83d7-92fb125e9c0b")
+			(uuid "70795d99-c8d4-49a4-83d7-92fb125e9c0c")
 		)
 		(instances
 			(project ""
