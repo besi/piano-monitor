@@ -518,174 +518,6 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_01x03"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x03"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x03_1_1"
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:Speaker"
 			(pin_names
 				(offset 0) hide)
@@ -2169,6 +2001,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 43.18) (xy 33.02 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "322c33e5-b94d-4957-b9ad-5d63b07b7ec3")
+	)
+	(wire
+		(pts
 			(xy 50.8 82.55) (xy 63.5 82.55)
 		)
 		(stroke
@@ -2353,6 +2195,28 @@
 			)
 		)
 	)
+	(global_label "EARTH"
+		(shape input)
+		(at 30.48 43.18 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "33a242e2-8efa-41de-9d67-811037d148ee")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.48 51.9709 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "T1"
 		(shape input)
 		(at 31.75 78.74 0)
@@ -2393,6 +2257,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "N_PRESWITCH"
+		(shape input)
+		(at 39.37 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "40bb7aca-0955-4298-b2f2-7a36b8957b08")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 23.5639 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2441,9 +2327,9 @@
 			)
 		)
 	)
-	(global_label "N"
+	(global_label "L_PRESWITCH"
 		(shape input)
-		(at 111.76 36.83 180)
+		(at 39.37 29.21 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2451,9 +2337,9 @@
 			)
 			(justify right)
 		)
-		(uuid "8a88a2cb-ef7d-49fb-bd3d-d762af3e5da7")
+		(uuid "954797ee-d913-44c9-a5c6-01bb6b655226")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.4443 36.83 0)
+			(at 23.8663 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2595,28 +2481,6 @@
 			)
 		)
 	)
-	(global_label "L"
-		(shape input)
-		(at 111.76 34.29 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f22fbf6e-55c4-48d1-827c-9240e5a27bc8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.7467 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "S1"
 		(shape input)
 		(at 53.34 77.47 90)
@@ -2641,7 +2505,7 @@
 	)
 	(symbol
 		(lib_id "power:Earth")
-		(at 33.02 43.18 270)
+		(at 29.21 43.18 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2650,7 +2514,7 @@
 		(fields_autoplaced yes)
 		(uuid "03229b57-3fb5-4680-a879-33ee313b9c62")
 		(property "Reference" "#PWR01"
-			(at 26.67 43.18 0)
+			(at 22.86 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2659,7 +2523,7 @@
 			)
 		)
 		(property "Value" "Earth"
-			(at 29.21 43.1799 90)
+			(at 25.4 43.1799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2668,7 +2532,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 43.18 0)
+			(at 29.21 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2677,7 +2541,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 43.18 0)
+			(at 29.21 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2686,7 +2550,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 33.02 43.18 0)
+			(at 29.21 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3810,73 +3674,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 111.76 39.37 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cf8457e5-acf0-482d-925c-c55662c3382d")
-		(property "Reference" "#PWR05"
-			(at 105.41 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 107.95 39.3699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 111.76 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e0f41002-abbc-411f-87fe-ab2c8ec5bb90")
-		)
-		(instances
-			(project "piano-monitor"
-				(path "/a27efd99-174e-47e5-804a-22be857a638b"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Audio:NCJ6FA-V")
 		(at 45.72 105.41 0)
 		(unit 2)
@@ -3955,79 +3752,6 @@
 				(path "/a27efd99-174e-47e5-804a-22be857a638b"
 					(reference "J3")
 					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 116.84 36.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fafbe293-890c-4b50-a402-65d0363de412")
-		(property "Reference" "J5"
-			(at 119.38 35.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "230AC"
-			(at 119.38 38.0999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 116.84 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 116.84 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 116.84 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a56b657f-a072-4075-8a92-3a565df49436")
-		)
-		(pin "3"
-			(uuid "8f3a43ac-804a-4195-849d-c386e808040e")
-		)
-		(pin "1"
-			(uuid "88ddce70-7aa5-4401-9f85-970ef005d8f5")
-		)
-		(instances
-			(project ""
-				(path "/a27efd99-174e-47e5-804a-22be857a638b"
-					(reference "J5")
-					(unit 1)
 				)
 			)
 		)
